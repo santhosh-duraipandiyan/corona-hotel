@@ -6,7 +6,13 @@ def viewData():
 	
 	data = json.load(open('data.json'))
 
+	print("##########################################")
+
 	for item in data:
+
+		if data[item]["name"] == "dummy":
+			
+			return
 
 		print("\nName: ",data[item]["name"])
 
@@ -17,3 +23,5 @@ def viewData():
 		print("Phone-number: ",data[item]["phone-number"])
 
 		print("Date: ",data[item]["date"],"\n")
+
+		print("##########################################")
