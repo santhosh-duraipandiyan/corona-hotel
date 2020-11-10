@@ -45,4 +45,6 @@ def addData():
 
 		json.dump(userData, fp)
 
+	print("\nData entered successfully!\n")
+
 	
